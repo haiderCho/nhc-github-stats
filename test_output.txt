@@ -1,0 +1,177 @@
+
+> nhc-github-stats@1.0.0 test
+> node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage
+
+(node:13708) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/calculateRank.test.js
+  ΓùÅ Test calculateRank ΓÇ║ beginner user gets B- rank
+
+    expect(received).toStrictEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "level": "B-",
+    -   "percentile": 65.02918514848255,
+    +   "percentile": 65.02918514848257,
+      }
+
+      31 |         followers: 5,
+      32 |       }),
+    > 33 |     ).toStrictEqual({ level: "B-", percentile: 65.02918514848255 });
+         |       ^
+      34 |   });
+      35 |
+      36 |   it("median user gets B+ rank", () => {
+
+      at Object.<anonymous> (tests/calculateRank.test.js:33:7)
+
+(node:3824) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/status.up.test.js
+(node:7164) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/pat-info.test.js
+  ΓùÅ Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ≡ƒöä add secrets lifecycle management: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+(node:4440) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/pin.test.js
+(node:6268) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/top-langs.test.js
+(node:12980) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/fetchStats.test.js
+  ΓùÅ Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ≡ƒöÉ prevent building .env in docker: https://dotenvx.com/prebuild
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+(node:14664) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/gist.test.js
+PASS tests/api.test.js
+  ΓùÅ Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ≡ƒöä add secrets lifecycle management: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+(node:4756) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/renderGistCard.test.js
+(node:9392) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/renderRepoCard.test.js (5.039 s)
+PASS tests/fetchGist.test.js
+PASS tests/fetchTopLanguages.test.js
+PASS tests/fetchWakatime.test.js
+PASS tests/wakatime.test.js
+(node:12172) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/renderTopLanguagesCard.test.js (5.92 s)
+(node:9208) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/renderStatsCard.test.js (5.912 s)
+PASS tests/card.test.js
+PASS tests/fmt.test.js
+PASS tests/ops.test.js
+PASS tests/retryer.test.js
+PASS tests/fetchRepo.test.js
+PASS tests/color.test.js
+PASS tests/render.test.js
+PASS tests/i18n.test.js
+PASS tests/flexLayout.test.js
+PASS tests/renderWakatimeCard.test.js
+PASS tests/html.test.js
+-------------------|---------|----------|---------|---------|---------------------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s               
+-------------------|---------|----------|---------|---------|---------------------------------
+All files          |    96.8 |    87.23 |   97.63 |    96.8 |                                 
+ api               |   84.69 |    72.13 |     100 |   84.69 |                                 
+  gist.js          |   88.18 |    72.72 |     100 |   88.18 | 52-53,114-126                   
+  index.js         |   92.21 |    83.33 |     100 |   92.21 | 154-166                         
+  pin.js           |      90 |    83.33 |     100 |      90 | 117-129                         
+  top-langs.js     |   84.57 |    73.68 |     100 |   84.57 | 102-103,105-118,175-187         
+  wakatime.js      |   68.49 |    28.57 |     100 |   68.49 | 62-63,66-79,116-145             
+ api/status        |   97.17 |    95.45 |     100 |   97.17 |                                 
+  pat-info.js      |   98.11 |    96.42 |     100 |   98.11 | 104-106                         
+  up.js            |   95.96 |    93.75 |     100 |   95.96 | 119-123                         
+ src               |     100 |      100 |     100 |     100 |                                 
+  calculateRank.js |     100 |      100 |     100 |     100 |                                 
+  translations.js  |     100 |      100 |     100 |     100 |                                 
+ src/cards         |   98.66 |    84.61 |   95.83 |   98.66 |                                 
+  gist.js          |     100 |    85.71 |     100 |     100 | 97-99                           
+  repo.js          |     100 |      100 |     100 |     100 |                                 
+  stats.js         |   95.84 |    79.22 |      75 |   95.84 | 125-135,146-155,526-527,549-550 
+  top-languages.js |   99.79 |    86.73 |     100 |   99.79 | 889-890                         
+  wakatime.js      |   98.96 |    80.43 |     100 |   98.96 | 228,419-420,439-440             
+ src/common        |   96.41 |    90.95 |   97.91 |   96.41 |                                 
+  Card.js          |   93.09 |    93.75 |   91.66 |   93.09 | 183-201                         
+  I18n.js          |     100 |      100 |     100 |     100 |                                 
+  access.js        |   76.81 |    76.92 |     100 |   76.81 | 23-26,35-46                     
+  blacklist.js     |     100 |      100 |     100 |     100 |                                 
+  cache.js         |   98.03 |     87.5 |     100 |   98.03 | 134-136                         
+  color.js         |   97.22 |       96 |     100 |   97.22 | 136-139                         
+  envs.js          |     100 |       25 |     100 |     100 | 4-12                            
+  error.js         |     100 |      100 |     100 |     100 |                                 
+  fmt.js           |   95.55 |    89.47 |     100 |   95.55 | 37-38,49-50                     
+  html.js          |     100 |      100 |     100 |     100 |                                 
+  http.js          |     100 |      100 |     100 |     100 |                                 
+  icons.js         |     100 |      100 |     100 |     100 |                                 
+  log.js           |     100 |    66.66 |     100 |     100 | 11                              
+  ops.js           |     100 |      100 |     100 |     100 |                                 
+  render.js        |     100 |    94.73 |     100 |     100 | 225                             
+  retryer.js       |   93.81 |     82.6 |     100 |   93.81 | 29-30,90-93                     
+ src/fetchers      |   96.62 |    89.91 |     100 |   96.62 |                                 
+  gist.js          |     100 |      100 |     100 |     100 |                                 
+  repo.js          |   94.91 |     87.5 |     100 |   94.91 | 74-75,77-78,113-114             
+  stats.js         |   95.29 |    89.36 |     100 |   95.29 | 201-203,237-238,272-282         
+  top-languages.js |   98.76 |    91.66 |     100 |   98.76 | 69-70                           
+  wakatime.js      |   94.59 |    77.77 |     100 |   94.59 | 32-33                           
+ themes            |     100 |      100 |     100 |     100 |                                 
+  index.js         |     100 |      100 |     100 |     100 |                                 
+-------------------|---------|----------|---------|---------|---------------------------------
+
+Summary of all failing tests
+FAIL tests/calculateRank.test.js
+  ΓùÅ Test calculateRank ΓÇ║ beginner user gets B- rank
+
+    expect(received).toStrictEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "level": "B-",
+    -   "percentile": 65.02918514848255,
+    +   "percentile": 65.02918514848257,
+      }
+
+      31 |         followers: 5,
+      32 |       }),
+    > 33 |     ).toStrictEqual({ level: "B-", percentile: 65.02918514848255 });
+         |       ^
+      34 |   });
+      35 |
+      36 |   it("median user gets B+ rank", () => {
+
+      at Object.<anonymous> (tests/calculateRank.test.js:33:7)
+
+
+Test Suites: 1 failed, 26 passed, 27 total
+Tests:       1 failed, 241 passed, 242 total
+Snapshots:   9 passed, 9 total
+Time:        11.417 s
+Ran all test suites.
